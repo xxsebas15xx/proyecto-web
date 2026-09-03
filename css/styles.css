@@ -1,3 +1,13 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; }
 header { background: #222; color: #fff; padding: 1rem; }
+header nav ul { display: flex; gap: 1rem; list-style: none; margin-top: 1rem; }
+header a { color: #fff; }
+.menu-toggle { background: #fff; border: 0; cursor: pointer; display: none; padding: 0.5rem 1rem; }
+
+@media (max-width: 600px) {
+ .menu-toggle { display: block; margin-top: 1rem; }
+ header nav { display: none; }
+ header nav.is-open { display: block; }
+ header nav ul { flex-direction: column; }
+}
