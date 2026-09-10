@@ -1,4 +1,4 @@
-console.log("Proyecto iniciado");
+console.log("Saludos desde feature/cambios-saludo");
 
 const menu = document.querySelector("#menu");
 const header = document.querySelector("header");
